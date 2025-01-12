@@ -16,14 +16,15 @@
         /* Body and General Styles */
         body {
             font-family: 'Arial', sans-serif;
-            color: #333;
+            color: #fff;
             line-height: 1.6;
             height: 100%;
-            background-image: url('https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExcjQ1bG1hbXhseXk2em95cDducmE1dXYyendxOGJxOXQ4bGcyNnRudCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/Eqz8ZFUScPHH2/giphy.webp'); /* Background GIF URL */
+            background-image: url('https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExcjQ1bG1hbXhseXk2em95cDducmE1dXYyendxOGJxOXQ4bGcyNnRudCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/Eqz8ZFUScPHH2/giphy.webp'); /* Full Page GIF Background */
             background-size: cover; /* Make the GIF cover the entire background */
             background-attachment: fixed; /* Fixed background when scrolling */
             background-position: center; /* Center the GIF */
             background-repeat: no-repeat; /* Prevent repeat */
+            height: 100%;
         }
 
         h1, h2, h3 {
@@ -37,8 +38,6 @@
 
         /* Header Styles */
         header {
-            background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent background for readability */
-            color: white;
             padding: 20px 0;
             text-align: center;
             position: relative;
@@ -46,7 +45,7 @@
         }
 
         header h1 {
-            font-size: 2.5rem;
+            font-size: 3rem;
             letter-spacing: 2px;
         }
 
@@ -73,39 +72,36 @@
 
         /* Main Section (About Me) */
         .intro {
-            background-color: rgba(255, 255, 255, 0.7); /* Translucent white background */
             padding: 80px 20px;
             text-align: center;
-            margin: 0;
-            z-index: 2;
             position: relative;
+            z-index: 2;
         }
 
         .intro h2 {
             font-size: 2.5rem;
             margin-bottom: 15px;
-            color: #333;
+            color: #fff;
         }
 
         .intro p {
             font-size: 1.2rem;
             max-width: 800px;
             margin: 0 auto;
-            color: #555;
+            color: #fff;
         }
 
         /* Achievements Section */
         #achievements {
             padding: 50px 20px;
             text-align: center;
-            background-color: rgba(255, 255, 255, 0.7); /* Translucent background */
-            z-index: 2;
             position: relative;
+            z-index: 2;
         }
 
         #achievements h2 {
             font-size: 2.5rem;
-            color: #333;
+            color: #fff;
             margin-bottom: 20px;
         }
 
@@ -116,28 +112,27 @@
 
         #achievements li {
             font-size: 1.2rem;
-            color: #555;
+            color: #fff;
             margin: 12px 0;
         }
 
         /* Contact Section */
         .contact {
-            background-color: rgba(255, 255, 255, 0.7); /* Translucent background */
             padding: 50px 20px;
             text-align: center;
-            z-index: 2;
             position: relative;
+            z-index: 2;
         }
 
         .contact h2 {
             font-size: 2.5rem;
-            color: #333;
+            color: #fff;
             margin-bottom: 20px;
         }
 
         .contact p {
             font-size: 1.1rem;
-            color: #555;
+            color: #fff;
             margin-bottom: 25px;
         }
 
@@ -155,7 +150,7 @@
             border: 1px solid #ddd;
             border-radius: 5px;
             width: 100%;
-            background-color: #fff;
+            background-color: rgba(255, 255, 255, 0.7); /* Slightly translucent background for input fields */
         }
 
         .contact button {
@@ -174,7 +169,6 @@
 
         /* Footer */
         footer {
-            background-color: #333;
             color: white;
             padding: 20px 0;
             text-align: center;
@@ -250,4 +244,3 @@
 
 </body>
 </html>
-
