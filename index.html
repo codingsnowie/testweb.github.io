@@ -16,13 +16,14 @@
         /* Body and General Styles */
         body {
             font-family: 'Arial', sans-serif;
-            background-color: #f9f9f9;
             color: #333;
             line-height: 1.6;
+            height: 100%;
             background-image: url('https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExcjQ1bG1hbXhseXk2em95cDducmE1dXYyendxOGJxOXQ4bGcyNnRudCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/Eqz8ZFUScPHH2/giphy.webp'); /* Background GIF URL */
             background-size: cover; /* Make the GIF cover the entire background */
-            background-attachment: fixed; /* Make it stay in place when scrolling */
+            background-attachment: fixed; /* Fixed background when scrolling */
             background-position: center; /* Center the GIF */
+            background-repeat: no-repeat; /* Prevent repeat */
         }
 
         h1, h2, h3 {
@@ -36,10 +37,12 @@
 
         /* Header Styles */
         header {
-            background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent black */
+            background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent background for readability */
             color: white;
             padding: 20px 0;
             text-align: center;
+            position: relative;
+            z-index: 1;
         }
 
         header h1 {
@@ -70,9 +73,12 @@
 
         /* Main Section (About Me) */
         .intro {
-            background-color: rgba(255, 255, 255, 0.8); /* Slight white background for readability */
+            background-color: rgba(255, 255, 255, 0.7); /* Translucent white background */
             padding: 80px 20px;
             text-align: center;
+            margin: 0;
+            z-index: 2;
+            position: relative;
         }
 
         .intro h2 {
@@ -92,7 +98,9 @@
         #achievements {
             padding: 50px 20px;
             text-align: center;
-            background-color: rgba(255, 255, 255, 0.8);
+            background-color: rgba(255, 255, 255, 0.7); /* Translucent background */
+            z-index: 2;
+            position: relative;
         }
 
         #achievements h2 {
@@ -114,9 +122,11 @@
 
         /* Contact Section */
         .contact {
-            background-color: rgba(255, 255, 255, 0.8);
+            background-color: rgba(255, 255, 255, 0.7); /* Translucent background */
             padding: 50px 20px;
             text-align: center;
+            z-index: 2;
+            position: relative;
         }
 
         .contact h2 {
@@ -169,6 +179,8 @@
             padding: 20px 0;
             text-align: center;
             margin-top: 40px;
+            z-index: 2;
+            position: relative;
         }
 
         footer p {
@@ -238,3 +250,4 @@
 
 </body>
 </html>
+
